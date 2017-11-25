@@ -1,32 +1,6 @@
-#LegendSock2.2Happy°æ#
+#LegendSock2.2Happyç‰ˆ#
 
-#ÓÃ·¨#
-LegendSock 2.2 ¿ªĞÄ°æ ÊÚÈ¨Âë LegendSock-7c88c80c90e05999 whmcs ss ²å¼ş ÆÆ½âÎŞ ÊÚÈ¨
+#ç”¨æ³•#
 
-#ÊÚÈ¨#
-ÏÂÃæÕâ´úÂë£¬ÊÇÒ»¸ö¼òÒ×µÄÇ©·¢ÓòÃûÊÚÈ¨SSµÄ
-<?php
-$domain = $_GET["domain"];
-$beginChars = substr($domain, 0, 4);
-$endChars = substr($domain, 0 - 4, 4);
-$reversal = strrev($domain);
-$md5 = md5(md5(md5($domain . $reversal) . md5($beginChars) . md5($endChars)));
-?>
-<html>
-<head>
-<meta charset="utf-8">
-<title>ShadowsocksÊÚÈ¨</title>
-</head>
-<body>
-<p>ÉñÆæº£ÂİShadowsocksÊÚÈ¨</br>WHMCS¶Ô½ÓSS²å¼ş</p>
-<form method="get">
-ÓòÃû: <input type="text" name="domain">
-<input type="submit" value="Ìá½»">
-</form>
-<pre>
-ÊÚÈ¨ÓòÃû£º<?php echo $_GET["domain"];?> 
-ÊÚÈ¨ÃÜÔ¿£º <input type="text" value="<?php echo $md5; ?> ">
-Ö»ÄÜÔÚPHP5.6ÏÂÊ¹ÓÃ£¬7.0²»¿ÉÓÃ¡£
-</pre>
-</body>
-</html>
+LegendSock 2.2 å¼€å¿ƒç‰ˆ æˆæƒç  LegendSock-7c88c80c90e05999 whmcs ss æ’ä»¶ ç ´è§£æ—  æˆæƒ
+
